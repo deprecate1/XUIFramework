@@ -1,0 +1,607 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TEST_VIEW DIALOG DISCARDABLE  0, 0, 675, 469
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_TEXT_DISPLAY,42,140,589,208
+    LTEXT           "",IDC_FLECHEG,77,380,39,35,WS_BORDER
+    LTEXT           "",IDC_FLECHED,550,380,39,35,WS_BORDER
+    CTEXT           "LABEL7",IDC_LABEL7,156,380,353,25,SS_CENTERIMAGE
+    CTEXT           "LABEL8",IDC_LABEL8,156,409,353,25,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_TEST_VIEW, DIALOG
+    BEGIN
+        RIGHTMARGIN, 674
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_EDITORTOOLBAR       BITMAP  MOVEABLE PURE   "res\\editorto.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_EDITORTOOLBAR TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_ZOOM_IN
+    BUTTON      ID_ZOOM_OUT
+    SEPARATOR
+    BUTTON      IDC_SETTINGS
+    SEPARATOR
+    BUTTON      ID_RESTRAIN
+    BUTTON      ID_MARGINS
+    SEPARATOR
+    BUTTON      ID_SNAP_TO_GRID
+    BUTTON      ID_SHOW_GRID
+    SEPARATOR
+    BUTTON      ID_BUTTON_MULTIDRAW
+    SEPARATOR
+    BUTTON      ID_ADD_NONE
+    BUTTON      ID_ADD_BUTTON
+    BUTTON      ID_ADD_EDIT
+    BUTTON      ID_ADD_STATIC
+    BUTTON      ID_ADD_CHECKBOX
+    BUTTON      ID_ADD_RADIOBUTTON
+    BUTTON      ID_ADD_COMBOBOX
+    BUTTON      ID_ADD_LISTBOX
+    BUTTON      ID_ADD_GROUPBOX
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 233, 38
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "A propos de Borne"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "Borne version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,183,7,50,14,WS_GROUP
+END
+
+IDD_COPTIONTREEDEMO_DIALOG DIALOG DISCARDABLE  0, 0, 195, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 179, 307
+STYLE DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Properties Dialog"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_PROP,0,7,177,301
+END
+
+IDD_PPG_GENERAL DIALOG DISCARDABLE  0, 0, 341, 227
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_KEY0                BITMAP  MOVEABLE PURE   "res\\key0.bmp"
+IDB_KEY1                BITMAP  MOVEABLE PURE   "res\\key1.bmp"
+IDB_KEY2                BITMAP  MOVEABLE PURE   "res\\key2.bmp"
+IDB_KEY3                BITMAP  MOVEABLE PURE   "res\\key3.bmp"
+IDB_KEY4                BITMAP  MOVEABLE PURE   "res\\key4.bmp"
+IDB_KEY5                BITMAP  MOVEABLE PURE   "res\\key5.bmp"
+IDB_KEY6                BITMAP  MOVEABLE PURE   "res\\key6.bmp"
+IDB_KEY7                BITMAP  MOVEABLE PURE   "res\\key7.bmp"
+IDB_KEY8                BITMAP  MOVEABLE PURE   "res\\key8.bmp"
+IDB_KEY9                BITMAP  MOVEABLE PURE   "res\\key9.bmp"
+IDB_KEYDOT              BITMAP  MOVEABLE PURE   "res\\KeyDot.bmp"
+IDR_XUICONTROLBAR       BITMAP  MOVEABLE PURE   "res\\xuicontr.bmp"
+IDB_IMAGES_NORMAL       BITMAP  MOVEABLE PURE   "res\\images_n.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_XUICONTROLBAR TOOLBAR MOVEABLE PURE  17, 16
+BEGIN
+    BUTTON      ID_XUILABEL
+    SEPARATOR
+    BUTTON      ID_XUILITEHTML
+    BUTTON      ID_XUIEDIT
+    BUTTON      ID_XUIEDITMULTI
+    BUTTON      ID_XUICOMBO
+    BUTTON      ID_XUICHECK
+    BUTTON      ID_XUIRADIO
+    BUTTON      ID_XUIDATE
+    BUTTON      ID_XUIGROUP
+    BUTTON      ID_XUIFRAME
+    BUTTON      ID_DYNBUTTONLEFTALIGN
+    BUTTON      ID_DYNBUTTONRIGHTALIGN
+    BUTTON      ID_DYNBUTTONTOPALIGN
+    BUTTON      ID_DYNBUTTONBOTTOMALIGN
+    BUTTON      ID_DYNBUTTONMAKESAMEWIDTH
+    BUTTON      ID_DYNBUTTONMAKESAMEHEIGHT
+    BUTTON      ID_DYNBUTTONMAKESAMESIZE
+    BUTTON      ID_DYNBUTTONTOGGLEGRID
+    BUTTON      ID_DYNBUTTONTOGGLEGRID
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Borne.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.fra\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.fra\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Borne.ico"
+IDR_BORNETYPE           ICON    DISCARDABLE     "res\\BorneDoc.ico"
+IDI_CONTACT             ICON    DISCARDABLE     "res\\user1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTEXT MENU DISCARDABLE 
+BEGIN
+    POPUP "Context Menu"
+    BEGIN
+        MENUITEM "Démarrer",                    ID_BORNE_DEMARRER
+        MENUITEM "Plein Ecran",                 ID_FULL_SCREEN_MODE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040C04B0"
+        BEGIN
+            VALUE "FileDescription", "Application MFC Borne\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Borne\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "OriginalFilename", "Borne.EXE\0"
+            VALUE "ProductName", "Application Borne\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Borne\n\nBorne\n\n\nBorne.Document\nBorne Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Borne"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "MAJ"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "DEF"
+    ID_INDICATOR_OVR        "ECR"
+    ID_INDICATOR_REC        "ENR"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Crée un nouveau document\nNouveau"
+    ID_FILE_OPEN            "Ouvre un document existant\nOuvrir"
+    ID_FILE_CLOSE           "Ferme le document actif\nFermer"
+    ID_FILE_SAVE            "Enregistre le document actif\nEnregistrer"
+    ID_FILE_SAVE_AS         "Enregistre le document actif sous un nouveau nom\nEnregistrer sous"
+    ID_FILE_PAGE_SETUP      "Change les options d'impression\nMise en page"
+    ID_FILE_PRINT_SETUP     "Change les options d'imprimante et d'impression\nConfiguration de l'impression"
+    ID_FILE_PRINT           "Imprime le document actif\nImprimer"
+    ID_FILE_PRINT_PREVIEW   "Affiche des pages entières\nAperçu avant impression"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Affiche des informations sur le programme, le numéro de version et le copyright\nA propos de"
+    ID_APP_EXIT             "Ferme l'application ; propose d'enregistrer les documents\nQuitter"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Ouvre ce document"
+    ID_FILE_MRU_FILE2       "Ouvre ce document"
+    ID_FILE_MRU_FILE3       "Ouvre ce document"
+    ID_FILE_MRU_FILE4       "Ouvre ce document"
+    ID_FILE_MRU_FILE5       "Ouvre ce document"
+    ID_FILE_MRU_FILE6       "Ouvre ce document"
+    ID_FILE_MRU_FILE7       "Ouvre ce document"
+    ID_FILE_MRU_FILE8       "Ouvre ce document"
+    ID_FILE_MRU_FILE9       "Ouvre ce document"
+    ID_FILE_MRU_FILE10      "Ouvre ce document"
+    ID_FILE_MRU_FILE11      "Ouvre ce document"
+    ID_FILE_MRU_FILE12      "Ouvre ce document"
+    ID_FILE_MRU_FILE13      "Ouvre ce document"
+    ID_FILE_MRU_FILE14      "Ouvre ce document"
+    ID_FILE_MRU_FILE15      "Ouvre ce document"
+    ID_FILE_MRU_FILE16      "Ouvre ce document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Passe au volet de fenêtre suivant\nVolet suivant"
+    ID_PREV_PANE            "Revient au volet précédent\nVolet précédent"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Réorganise les fenêtres en une mosaïque\nMosaïque"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Efface la sélection\nEffacer"
+    ID_EDIT_CLEAR_ALL       "Efface tout\nEffacer tout"
+    ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_CUT             "Supprime la sélection et la place dans le Presse-papiers\nCouper"
+    ID_EDIT_FIND            "Recherche le texte spécifié\nRechercher"
+    ID_EDIT_PASTE           "Insère le contenu du Presse-papiers\nColler"
+    ID_EDIT_REPEAT          "Répète la dernière action\nRépéter"
+    ID_EDIT_REPLACE         "Remplace le texte spécifique par un texte différent\nRemplacer"
+    ID_EDIT_SELECT_ALL      "Sélectionne le document entier\nSélectionner tout"
+    ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+    ID_EDIT_REDO            "Rétablit l'action précédemment annulée\nRétablir"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Affiche ou masque la barre d'outils\nBarre d'outils"
+    ID_VIEW_STATUS_BAR      "Affiche ou masque la barre d'état\nBarre d'état"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change la taille de la fenêtre"
+    AFX_IDS_SCMOVE          "Change la position de la fenêtre"
+    AFX_IDS_SCMINIMIZE      "Réduit la fenêtre en icône"
+    AFX_IDS_SCMAXIMIZE      "Agrandit la fenêtre au format de l'écran"
+    AFX_IDS_SCNEXTWINDOW    "Passe à la fenêtre de document suivante"
+    AFX_IDS_SCPREVWINDOW    "Passe à la fenêtre de document précédente"
+    AFX_IDS_SCCLOSE         "Ferme la fenêtre active et propose l'enregistrement des documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaure la fenêtre à sa taille d'origine"
+    AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Ferme le mode d'aperçu avant impression\nFermer l'aperçu"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_DYNCONTROLBAR       BITMAP  MOVEABLE PURE   "res\\dyntoolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_DYNCONTROLBAR TOOLBAR MOVEABLE PURE  17, 16
+BEGIN
+    BUTTON      ID_DYNBUTTONPICTURE
+    BUTTON      ID_XUIEDIT
+    BUTTON      ID_DYNBUTTONEDITMULTI
+    BUTTON      ID_DYNBUTTONLABEL
+    BUTTON      ID_DYNBUTTONCOMBO
+    BUTTON      ID_DYNBUTTONCHECK
+    BUTTON      ID_DYNBUTTONRADIO
+    BUTTON      ID_DYNBUTTONDATE
+    BUTTON      ID_DYNBUTTONGROUP
+    SEPARATOR
+    BUTTON      ID_DYNBUTTONLEFTALIGN
+    BUTTON      ID_DYNBUTTONRIGHTALIGN
+    BUTTON      ID_DYNBUTTONTOPALIGN
+    BUTTON      ID_DYNBUTTONBOTTOMALIGN
+    BUTTON      ID_DYNBUTTONMAKESAMEWIDTH
+    BUTTON      ID_DYNBUTTONMAKESAMEHEIGHT
+    BUTTON      ID_DYNBUTTONMAKESAMESIZE
+    BUTTON      ID_DYNBUTTONTOGGLEGRID
+    BUTTON      ID_DYNBUTTONTOGGLEGRID
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save As...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Preview",               ID_FILE_PRINT_PREVIEW
+        MENUITEM "Print Setup",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Fichier récent",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Cut\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "Paste\tCtrl+V",               ID_EDIT_PASTE
+        MENUITEM "Options",                     ID_EDIT_OPTIONS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "Status Bar",                  ID_VIEW_STATUS_BAR
+        MENUITEM "Screen Designer",             40032
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "&A propos de Borne...",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CHECKCURSOR         CURSOR  DISCARDABLE     "res\\checkcurs.cur"
+IDC_COMBOCURSOR         CURSOR  DISCARDABLE     "res\\combocurs.cur"
+IDC_DATECURSOR          CURSOR  DISCARDABLE     "res\\datecurs.cur"
+IDC_EDITCURSOR          CURSOR  DISCARDABLE     "res\\editcurs.cur"
+IDC_GROUPCURSOR         CURSOR  DISCARDABLE     "res\\groupcurs.cur"
+IDC_LABELCURSOR         CURSOR  DISCARDABLE     "res\\labelcurs.cur"
+IDC_MULTILINEEDITCURSOR CURSOR  DISCARDABLE     "res\\multieditcurs.cur"
+IDC_RADIOCURSOR         CURSOR  DISCARDABLE     "res\\radiocurs.cur"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Borne.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.fra\afxres.rc"          // Standard components
+#include "l.fra\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

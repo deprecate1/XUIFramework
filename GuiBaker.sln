@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Borne", "GuiBaker.vcxproj", "{C83971F4-9627-7DCC-BA99-5938BF27DB51}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PropertyViewLib", "PropertyLib\PropertyViewLib.vcxproj", "{2FFB8AB5-4C49-114D-1065-42A8FC2689E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C83971F4-9627-7DCC-BA99-5938BF27DB51}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C83971F4-9627-7DCC-BA99-5938BF27DB51}.Debug|Win32.Build.0 = Debug|Win32
+		{C83971F4-9627-7DCC-BA99-5938BF27DB51}.Release|Win32.ActiveCfg = Release|Win32
+		{C83971F4-9627-7DCC-BA99-5938BF27DB51}.Release|Win32.Build.0 = Release|Win32
+		{C83971F4-9627-7DCC-BA99-5938BF27DB51}.Template|Win32.ActiveCfg = Release|Win32
+		{C83971F4-9627-7DCC-BA99-5938BF27DB51}.Template|Win32.Build.0 = Release|Win32
+		{2FFB8AB5-4C49-114D-1065-42A8FC2689E5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2FFB8AB5-4C49-114D-1065-42A8FC2689E5}.Debug|Win32.Build.0 = Debug|Win32
+		{2FFB8AB5-4C49-114D-1065-42A8FC2689E5}.Release|Win32.ActiveCfg = Release|Win32
+		{2FFB8AB5-4C49-114D-1065-42A8FC2689E5}.Release|Win32.Build.0 = Release|Win32
+		{2FFB8AB5-4C49-114D-1065-42A8FC2689E5}.Template|Win32.ActiveCfg = Template|Win32
+		{2FFB8AB5-4C49-114D-1065-42A8FC2689E5}.Template|Win32.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Borne</ProjectName>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>XuiWnd;Widgets;Database;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\GuiBaker.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\GuiBaker.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\GuiBaker.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>./PropertyLib/PropertyLibD.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>XuiWnd;widgets;Database;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\GuiBaker.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\GuiBaker.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\GuiBaker.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Borne.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BorneDoc.cpp" />
+    <ClCompile Include="GuiBaker.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TestView.cpp" />
+    <ClCompile Include="Widgets\CxStatic\CxStatic.cpp" />
+    <ClCompile Include="Widgets\CxPicture\CxPicture.cpp" />
+    <ClCompile Include="Widgets\CStaticHtml\CeXDib.cpp" />
+    <ClCompile Include="Widgets\CStaticHtml\PPDrawManager.cpp" />
+    <ClCompile Include="Widgets\CStaticHtml\PPHtmlDrawer.cpp" />
+    <ClCompile Include="Widgets\CStaticHtml\PPHtmlStatic.cpp" />
+    <ClCompile Include="Widgets\CResizeDlg\ResizeDlg.cpp" />
+    <ClCompile Include="Widgets\CxCommon\CxCommon.cpp" />
+    <ClCompile Include="Widgets\CxFrame\CxFrame.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\hookwnd.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\PropPageFrame.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\PropPageFrameBordered.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\PropPageFrameDefault.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\PropPageFrameEx.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\PropPageFrameOffice2003.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableDialog.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableGrip.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableLayout.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableMinMax.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizablePage.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableSheet.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableState.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\ThemeLibEx.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheet.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetBase.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetBordered.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetEx.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetOffice2003.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetResizableLibHook.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetSplitter.cpp" />
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetTreeCtrl.cpp" />
+    <ClCompile Include="Widgets\StdGrfx.cpp" />
+    <ClCompile Include="CStringEx.cpp" />
+    <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="PPgGeneral.cpp" />
+    <ClCompile Include="OptionsDlg.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="CBase64Coding.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="XuiWnd\GUIPropDlg.cpp" />
+    <ClCompile Include="XuiWnd\GUIElement.cpp" />
+    <ClCompile Include="XuiWnd\GUIPicture.cpp" />
+    <ClCompile Include="XuiWnd\GUIStatic.cpp" />
+    <ClCompile Include="XuiWnd\GUILiteHtml.cpp" />
+    <ClCompile Include="XuiWnd\GUIFrame.cpp" />
+    <ClCompile Include="XuiWnd\GUIEdit.cpp" />
+    <ClCompile Include="XuiWnd\GUITracker.cpp" />
+    <ClCompile Include="XuiWnd\GUITrackerObject.cpp" />
+    <ClCompile Include="XuiWnd\GUIControlBar.cpp" />
+    <ClCompile Include="XuiWnd\GUIDroptarget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BorneDoc.h" />
+    <ClInclude Include="GuiBaker.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TestView.h" />
+    <ClInclude Include="Widgets\CxStatic\CxStatic.h" />
+    <ClInclude Include="Widgets\CxPicture\CxPicture.h" />
+    <ClInclude Include="Widgets\CStaticHtml\CeXDib.h" />
+    <ClInclude Include="Widgets\CStaticHtml\PPDrawManager.h" />
+    <ClInclude Include="Widgets\CStaticHtml\PPHtmlDrawer.h" />
+    <ClInclude Include="Widgets\CStaticHtml\PPHtmlStatic.h" />
+    <ClInclude Include="Widgets\CxImage\ximacfg.h" />
+    <ClInclude Include="Widgets\CxImage\ximage.h" />
+    <ClInclude Include="Widgets\CResizeDlg\ResizeDlg.h" />
+    <ClInclude Include="Widgets\CxCommon\CxCommon.h" />
+    <ClInclude Include="Widgets\CxFrame\CxFrame.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\hookwnd.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\memdc.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\PropPageFrame.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\PropPageFrameBordered.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\PropPageFrameDefault.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\PropPageFrameEx.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\PropPageFrameOffice2003.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableDialog.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableGrip.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableLayout.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableMinMax.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableMsgSupport.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizablePage.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableSheet.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableState.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\ThemeLibEx.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheet.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetBase.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetBordered.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetEx.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetOffice2003.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetResizableLibHook.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetSplitter.h" />
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetTreeCtrl.h" />
+    <ClInclude Include="Widgets\MemDC.h" />
+    <ClInclude Include="Widgets\Rgbcolor.h" />
+    <ClInclude Include="Widgets\StdGrfx.h" />
+    <ClInclude Include="CStringEx.h" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="PPgGeneral.h" />
+    <ClInclude Include="OptionsDlg.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="CBase64Coding.h" />
+    <ClInclude Include="tinystr.h" />
+    <ClInclude Include="tinyxml.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="WFC\wfc_validate.h" />
+    <ClInclude Include="XuiWnd\GUIPropDlg.h" />
+    <ClInclude Include="XuiWnd\GUIElement.h" />
+    <ClInclude Include="XuiWnd\GUIPicture.h" />
+    <ClInclude Include="XuiWnd\GUIStatic.h" />
+    <ClInclude Include="XuiWnd\GUILiteHtml.h" />
+    <ClInclude Include="XuiWnd\GUIFrame.h" />
+    <ClInclude Include="XuiWnd\GUIEdit.h" />
+    <ClInclude Include="XuiWnd\GUITracker.h" />
+    <ClInclude Include="XuiWnd\GUITrackerObject.h" />
+    <ClInclude Include="XuiWnd\GUIControlBar.h" />
+    <ClInclude Include="XuiWnd\GUIDroptarget.h" />
+    <ClInclude Include="XuiWnd\XuiScreen.h" />
+    <ClInclude Include="XuiWnd\XuiWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\ABTOF Logo.bmp" />
+    <CustomBuild Include="res\banner.bmp" />
+    <CustomBuild Include="res\Borne.ico" />
+    <CustomBuild Include="res\Borne.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\BorneDoc.ico" />
+    <CustomBuild Include="res\checkcurs.cur" />
+    <CustomBuild Include="res\combocurs.cur" />
+    <CustomBuild Include="res\cursor1.cur" />
+    <CustomBuild Include="res\datecurs.cur" />
+    <CustomBuild Include="res\dice.bmp" />
+    <CustomBuild Include="res\dyntoolbar.bmp" />
+    <CustomBuild Include="res\editcurs.cur" />
+    <CustomBuild Include="res\editorto.bmp" />
+    <CustomBuild Include="res\FlecheBN.bmp" />
+    <CustomBuild Include="res\FlecheNB.bmp" />
+    <CustomBuild Include="res\groupcurs.cur" />
+    <CustomBuild Include="res\images_n.bmp" />
+    <CustomBuild Include="res\key0.bmp" />
+    <CustomBuild Include="res\key1.bmp" />
+    <CustomBuild Include="res\key2.bmp" />
+    <CustomBuild Include="res\key3.bmp" />
+    <CustomBuild Include="res\key4.bmp" />
+    <CustomBuild Include="res\key5.bmp" />
+    <CustomBuild Include="res\key6.bmp" />
+    <CustomBuild Include="res\key7.bmp" />
+    <CustomBuild Include="res\key8.bmp" />
+    <CustomBuild Include="res\key9.bmp" />
+    <CustomBuild Include="res\KeyDot.bmp" />
+    <CustomBuild Include="res\labelcurs.cur" />
+    <CustomBuild Include="res\logo_francecard.bmp" />
+    <CustomBuild Include="res\multieditcurs.cur" />
+    <CustomBuild Include="res\radiocurs.cur" />
+    <CustomBuild Include="res\ratp1.bmp" />
+    <CustomBuild Include="res\RATP2004.bmp" />
+    <CustomBuild Include="res\splash1.bmp" />
+    <CustomBuild Include="res\SplashScreen.bmp" />
+    <CustomBuild Include="res\test.bmp" />
+    <CustomBuild Include="res\Toolbar.bmp" />
+    <CustomBuild Include="res\user1.ico" />
+    <CustomBuild Include="res\vetement.bmp" />
+    <CustomBuild Include="res\xuicontr.bmp" />
+    <CustomBuild Include="Widgets\TreePropSheetEx\ResizableMsgSupport.inl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\msw\jpeg.lib" />
+    <Library Include="lib\msw\png.lib" />
+    <Library Include="lib\msw\zlib.lib" />
+    <Library Include="lib\msw\cximage.lib" />
+    <Library Include="lib\msw\tinyxml.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

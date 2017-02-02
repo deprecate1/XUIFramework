@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfAtl>false</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\PropertyViewLib.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>if exist ..\lib copy $(OutDir)*.lib ..\lib\msw</Command>
+      <Message>Copying files...</Message>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <Culture>0x0406</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\PropertyViewLib.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>Release\PropertyLib.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\../Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\../Debug\PropertyViewLib.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\../Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\../Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0406</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\../Debug\PropertyViewLib.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>PropertyLib/PropertyLibD.lib</OutputFile>
+      <Verbose>true</Verbose>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ECommentPane.cpp" />
+    <ClCompile Include="EGridCtrl.cpp" />
+    <ClCompile Include="EGridView.cpp" />
+    <ClCompile Include="EIconTextButtonProperty.cpp" />
+    <ClCompile Include="EPropCtrl.cpp" />
+    <ClCompile Include="EProperty.cpp" />
+    <ClCompile Include="EPropertyCheck.cpp" />
+    <ClCompile Include="EPropertyColor.cpp" />
+    <ClCompile Include="EPropertyCombo.cpp" />
+    <ClCompile Include="EPropertyDir.cpp" />
+    <ClCompile Include="EPropertyDouble.cpp" />
+    <ClCompile Include="EPropertyFile.cpp" />
+    <ClCompile Include="EPropertyFloat.cpp" />
+    <ClCompile Include="EPropertyFont.cpp" />
+    <ClCompile Include="EPropertyInt.cpp" />
+    <ClCompile Include="EPropertySeparator.cpp" />
+    <ClCompile Include="EPropertyString.cpp" />
+    <ClCompile Include="EPropertyTextblock.cpp" />
+    <ClCompile Include="EPropertyTextblockWindow.cpp" />
+    <ClCompile Include="EPropList.cpp" />
+    <ClCompile Include="EPropListCtrl.cpp" />
+    <ClCompile Include="EPropView.cpp" />
+    <ClCompile Include="EPropWnd.cpp" />
+    <ClCompile Include="EPropWndEdit.cpp" />
+    <ClCompile Include="EXMenu.cpp" />
+    <ClCompile Include="EXTreeCtrl.cpp" />
+    <ClCompile Include="EXTreeView.cpp" />
+    <ClCompile Include="EXWaitingTreeCtrl.cpp" />
+    <ClCompile Include="HoverButton.cpp" />
+    <ClCompile Include="SetRawPixels.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CheckOff.h" />
+    <ClInclude Include="CheckOffDisabled.h" />
+    <ClInclude Include="CheckOn.h" />
+    <ClInclude Include="CheckOnDisabled.h" />
+    <ClInclude Include="ECommentPane.h" />
+    <ClInclude Include="EGridCtrl.h" />
+    <ClInclude Include="EGridView.h" />
+    <ClInclude Include="EIconTextButtonProperty.h" />
+    <ClInclude Include="EPropCtrl.h" />
+    <ClInclude Include="EProperty.h" />
+    <ClInclude Include="EPropertyCheck.h" />
+    <ClInclude Include="EPropertyColor.h" />
+    <ClInclude Include="EPropertyCombo.h" />
+    <ClInclude Include="EPropertyDir.h" />
+    <ClInclude Include="EPropertyDouble.h" />
+    <ClInclude Include="EPropertyFile.h" />
+    <ClInclude Include="EPropertyFloat.h" />
+    <ClInclude Include="EPropertyFont.h" />
+    <ClInclude Include="EPropertyInt.h" />
+    <ClInclude Include="EPropertySeparator.h" />
+    <ClInclude Include="EPropertyString.h" />
+    <ClInclude Include="EPropertyTextblock.h" />
+    <ClInclude Include="EPropertyTextblockWindow.h" />
+    <ClInclude Include="EPropList.h" />
+    <ClInclude Include="EPropListCtrl.h" />
+    <ClInclude Include="EPropView.h" />
+    <ClInclude Include="EPropWnd.h" />
+    <ClInclude Include="EPropWndEdit.h" />
+    <ClInclude Include="EXMenu.h" />
+    <ClInclude Include="EXTreeCtrl.h" />
+    <ClInclude Include="EXTreeView.h" />
+    <ClInclude Include="EXWaitingTreeCtrl.h" />
+    <ClInclude Include="HoverButton.h" />
+    <ClInclude Include="IGridRow.h" />
+    <ClInclude Include="IPropertyChangeListener.h" />
+    <ClInclude Include="IPropertyHost.h" />
+    <ClInclude Include="IRowList.h" />
+    <ClInclude Include="IXTreeItem.h" />
+    <ClInclude Include="MinimizeBitmaps52x13.h" />
+    <ClInclude Include="NodeClosed.h" />
+    <ClInclude Include="NodeOpen.h" />
+    <ClInclude Include="SetRawPixels.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Todo.txt" />
+    <CustomBuild Include="Usage.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6dbd2989-2d69-4d0d-ab55-2e44d2a8026f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{02739724-f5bf-473f-8412-c145435c71b0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{f2412c95-67e1-43c4-9cc1-7c63f06eb56e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Widgets">
+      <UniqueIdentifier>{5f399c08-5cc7-4895-9bc3-87388adb66e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\CxStatic">
+      <UniqueIdentifier>{43c24478-8b99-4bf4-ac79-1e4a477c37fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\CxPicture">
+      <UniqueIdentifier>{466b9a1a-94c4-41b6-81fd-7726f9f9af7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\CStaticHtml">
+      <UniqueIdentifier>{5b3c7c9e-1df8-4213-8649-4003b4e77107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\CxImage">
+      <UniqueIdentifier>{a3a536c3-73b0-444a-8801-a43fb8354f5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\CResizeDlg">
+      <UniqueIdentifier>{cee068d6-7780-420f-a424-afd9e99363ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\CxCommon">
+      <UniqueIdentifier>{6d3aea7b-d839-4938-92a2-7d26116ef05e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\CxFrame">
+      <UniqueIdentifier>{726de351-f497-44e0-9157-9c8d07647e6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\TreePropSheetEx">
+      <UniqueIdentifier>{d5db4426-687e-4e31-b988-d00c14d5b951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{d9761e03-8da6-4e43-80a8-d2ed5aa8ff99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{ea57dfd1-d791-4ee0-9fb1-ee3781fe3980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Settings\PPgGeneral">
+      <UniqueIdentifier>{dd5c9ae4-25dc-45c1-b7b3-279eb0bcc695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{12bd6fc3-cb9c-41ad-a4a3-70a63d2349a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{e664ea65-e5b3-4351-9a3a-8889c068edcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WFC">
+      <UniqueIdentifier>{fa2dcef5-d3e0-4ff6-955c-79beede4b479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XuiWnd">
+      <UniqueIdentifier>{d5336603-3714-4476-9b1e-3940030b2a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XuiWnd\XuiProperties">
+      <UniqueIdentifier>{6051204f-6cc4-4df7-be17-af7e214392cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XuiWnd\XuiElements">
+      <UniqueIdentifier>{ed96d488-dd45-4d6c-b88f-077ef99506b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XuiWnd\XuiElements\XuiElement">
+      <UniqueIdentifier>{9970421a-d77d-43c3-9704-8ee824524bbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XuiWnd\XuiElements\XuiPicture">
+      <UniqueIdentifier>{04fc9f52-2d68-4b35-8337-5d3da209b0c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XuiWnd\XuiElements\XuiStatic">
+      <UniqueIdentifier>{3038561d-8317-467b-8e8e-aec329eef876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XuiWnd\XuiElements\XuiLiteHtml">
+      <UniqueIdentifier>{b030dce9-c763-4d0b-a8df-7d60f2f16311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XuiWnd\XuiElements\XuiFrame">
+      <UniqueIdentifier>{146386d3-45f7-44f3-93e5-103b95fdbf9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XuiWnd\XuiElements\XuiEdit">
+      <UniqueIdentifier>{d9895569-ff9a-4472-88ea-387e70951c42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XuiWnd\XuiTracker">
+      <UniqueIdentifier>{f80780c0-9d70-4ca2-8520-3a4767c18e1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XuiWnd\XuiToolBar">
+      <UniqueIdentifier>{1df27f82-3093-40ec-b5e6-16b05a5f7c72}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Borne.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BorneDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiBaker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\CxStatic\CxStatic.cpp">
+      <Filter>Widgets\CxStatic</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\CxPicture\CxPicture.cpp">
+      <Filter>Widgets\CxPicture</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\CStaticHtml\CeXDib.cpp">
+      <Filter>Widgets\CStaticHtml</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\CStaticHtml\PPDrawManager.cpp">
+      <Filter>Widgets\CStaticHtml</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\CStaticHtml\PPHtmlDrawer.cpp">
+      <Filter>Widgets\CStaticHtml</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\CStaticHtml\PPHtmlStatic.cpp">
+      <Filter>Widgets\CStaticHtml</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\CResizeDlg\ResizeDlg.cpp">
+      <Filter>Widgets\CResizeDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\CxCommon\CxCommon.cpp">
+      <Filter>Widgets\CxCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\CxFrame\CxFrame.cpp">
+      <Filter>Widgets\CxFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\hookwnd.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\PropPageFrame.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\PropPageFrameBordered.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\PropPageFrameDefault.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\PropPageFrameEx.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\PropPageFrameOffice2003.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableDialog.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableGrip.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableLayout.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableMinMax.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizablePage.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableSheet.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\ResizableState.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\ThemeLibEx.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheet.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetBase.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetBordered.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetEx.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetOffice2003.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetResizableLibHook.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetSplitter.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\TreePropSheetEx\TreePropSheetTreeCtrl.cpp">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\StdGrfx.cpp">
+      <Filter>Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="CStringEx.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Misc.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="PPgGeneral.cpp">
+      <Filter>Settings\PPgGeneral</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsDlg.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="CBase64Coding.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="XuiWnd\GUIPropDlg.cpp">
+      <Filter>XuiWnd\XuiProperties</Filter>
+    </ClCompile>
+    <ClCompile Include="XuiWnd\GUIElement.cpp">
+      <Filter>XuiWnd\XuiElements\XuiElement</Filter>
+    </ClCompile>
+    <ClCompile Include="XuiWnd\GUIPicture.cpp">
+      <Filter>XuiWnd\XuiElements\XuiPicture</Filter>
+    </ClCompile>
+    <ClCompile Include="XuiWnd\GUIStatic.cpp">
+      <Filter>XuiWnd\XuiElements\XuiStatic</Filter>
+    </ClCompile>
+    <ClCompile Include="XuiWnd\GUILiteHtml.cpp">
+      <Filter>XuiWnd\XuiElements\XuiLiteHtml</Filter>
+    </ClCompile>
+    <ClCompile Include="XuiWnd\GUIFrame.cpp">
+      <Filter>XuiWnd\XuiElements\XuiFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="XuiWnd\GUIEdit.cpp">
+      <Filter>XuiWnd\XuiElements\XuiEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="XuiWnd\GUITracker.cpp">
+      <Filter>XuiWnd\XuiTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="XuiWnd\GUITrackerObject.cpp">
+      <Filter>XuiWnd\XuiTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="XuiWnd\GUIControlBar.cpp">
+      <Filter>XuiWnd\XuiToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="XuiWnd\GUIDroptarget.cpp">
+      <Filter>XuiWnd\XuiToolBar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BorneDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiBaker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\CxStatic\CxStatic.h">
+      <Filter>Widgets\CxStatic</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\CxPicture\CxPicture.h">
+      <Filter>Widgets\CxPicture</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\CStaticHtml\CeXDib.h">
+      <Filter>Widgets\CStaticHtml</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\CStaticHtml\PPDrawManager.h">
+      <Filter>Widgets\CStaticHtml</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\CStaticHtml\PPHtmlDrawer.h">
+      <Filter>Widgets\CStaticHtml</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\CStaticHtml\PPHtmlStatic.h">
+      <Filter>Widgets\CStaticHtml</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\CxImage\ximacfg.h">
+      <Filter>Widgets\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\CxImage\ximage.h">
+      <Filter>Widgets\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\CResizeDlg\ResizeDlg.h">
+      <Filter>Widgets\CResizeDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\CxCommon\CxCommon.h">
+      <Filter>Widgets\CxCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\CxFrame\CxFrame.h">
+      <Filter>Widgets\CxFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\hookwnd.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\memdc.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\PropPageFrame.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\PropPageFrameBordered.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\PropPageFrameDefault.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\PropPageFrameEx.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\PropPageFrameOffice2003.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableDialog.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableGrip.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableLayout.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableMinMax.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableMsgSupport.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizablePage.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableSheet.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\ResizableState.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\ThemeLibEx.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheet.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetBase.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetBordered.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetEx.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetOffice2003.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetResizableLibHook.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetSplitter.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\TreePropSheetEx\TreePropSheetTreeCtrl.h">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\MemDC.h">
+      <Filter>Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\Rgbcolor.h">
+      <Filter>Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Widgets\StdGrfx.h">
+      <Filter>Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="CStringEx.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Misc.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="PPgGeneral.h">
+      <Filter>Settings\PPgGeneral</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsDlg.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="CBase64Coding.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="tinystr.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="WFC\wfc_validate.h">
+      <Filter>WFC</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\GUIPropDlg.h">
+      <Filter>XuiWnd\XuiProperties</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\GUIElement.h">
+      <Filter>XuiWnd\XuiElements\XuiElement</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\GUIPicture.h">
+      <Filter>XuiWnd\XuiElements\XuiPicture</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\GUIStatic.h">
+      <Filter>XuiWnd\XuiElements\XuiStatic</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\GUILiteHtml.h">
+      <Filter>XuiWnd\XuiElements\XuiLiteHtml</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\GUIFrame.h">
+      <Filter>XuiWnd\XuiElements\XuiFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\GUIEdit.h">
+      <Filter>XuiWnd\XuiElements\XuiEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\GUITracker.h">
+      <Filter>XuiWnd\XuiTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\GUITrackerObject.h">
+      <Filter>XuiWnd\XuiTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\GUIControlBar.h">
+      <Filter>XuiWnd\XuiToolBar</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\GUIDroptarget.h">
+      <Filter>XuiWnd\XuiToolBar</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\XuiScreen.h">
+      <Filter>XuiWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="XuiWnd\XuiWnd.h">
+      <Filter>XuiWnd</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\msw\jpeg.lib">
+      <Filter>Widgets\CxImage</Filter>
+    </Library>
+    <Library Include="lib\msw\png.lib">
+      <Filter>Widgets\CxImage</Filter>
+    </Library>
+    <Library Include="lib\msw\zlib.lib">
+      <Filter>Widgets\CxImage</Filter>
+    </Library>
+    <Library Include="lib\msw\cximage.lib">
+      <Filter>Widgets\CxImage</Filter>
+    </Library>
+    <Library Include="lib\msw\tinyxml.lib">
+      <Filter>XML</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\ABTOF Logo.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\banner.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Borne.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Borne.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\BorneDoc.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\checkcurs.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\combocurs.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\datecurs.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\dice.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\dyntoolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\editcurs.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\editorto.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\FlecheBN.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\FlecheNB.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\groupcurs.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\images_n.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\key0.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\key1.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\key2.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\key3.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\key4.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\key5.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\key6.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\key7.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\key8.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\key9.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\KeyDot.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\labelcurs.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\logo_francecard.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\multieditcurs.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\radiocurs.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\ratp1.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\RATP2004.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\splash1.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\SplashScreen.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\test.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\user1.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\vetement.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\xuicontr.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widgets\TreePropSheetEx\ResizableMsgSupport.inl">
+      <Filter>Widgets\TreePropSheetEx</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
